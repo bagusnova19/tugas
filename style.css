@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: linear-gradient(180deg, rgb(23, 30, 32) 35%, rgb(11, 11, 26) 100%);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo {
+    font-family: "Poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(247, 240, 240);
+    font-weight: bolder;
+    font-size: 250%;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 98%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li {
+    font-family: "Poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: rgb(227, 226, 231);
+    text-decoration: none;
+    font-size: large;
+}
+
+.navbar ul li a:hover {
+    color: rgb(214, 213, 219);
+    font-weight: bolder;
+}
+
+.content {
+    animation: slide-in 1500ms;
+    color: rgb(240, 224, 224);
+    width: 95%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    margin: 0 45px;
+}
+
+.content h1 {
+    color: rgb(235, 230, 230);
+    font-size: 370%;
+}
+
+.content p {
+    font-size: 125%;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
